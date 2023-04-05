@@ -15,8 +15,10 @@ public class TrelloMapperTest {
 
     private final TrelloMapper trelloMapper = new TrelloMapper();
 
-    private static TrelloCard firstTrelloCard, secondTrelloCard;
-    private static TrelloCardDto firstTrelloCardDto, secondTrelloCardDto;
+    private static TrelloCard firstTrelloCard;
+    private static TrelloCard secondTrelloCard;
+    private static TrelloCardDto firstTrelloCardDto;
+    private static TrelloCardDto secondTrelloCardDto;
     private static List<TrelloList> trelloLists;
     private static List<TrelloListDto> trelloListDtos;
     private static TrelloBoard trelloBoard;
@@ -74,8 +76,6 @@ public class TrelloMapperTest {
 
     @Test
     void mapToList() {
-        //Given
-
         //When
         List<TrelloList> resultList = trelloMapper.mapToList(trelloListDtos);
 
@@ -86,8 +86,6 @@ public class TrelloMapperTest {
 
     @Test
     void mapToListDto() {
-        //Given
-
         //When
         List<TrelloListDto> resultList = trelloMapper.mapToListDto(trelloLists);
 
@@ -98,8 +96,6 @@ public class TrelloMapperTest {
 
     @Test
     void mapToCard() {
-        //Given
-
         //When
         TrelloCard firstResultCard = trelloMapper.mapToCard(firstTrelloCardDto);
         TrelloCard secondResultCard = trelloMapper.mapToCard(secondTrelloCardDto);
@@ -111,8 +107,6 @@ public class TrelloMapperTest {
 
     @Test
     void mapToCardDto() {
-        //Given
-
         //When
         TrelloCardDto firstResultCard = trelloMapper.mapToCardDto(firstTrelloCard);
         TrelloCardDto secondResultCard = trelloMapper.mapToCardDto(secondTrelloCard);
