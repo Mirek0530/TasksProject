@@ -83,8 +83,8 @@ public class TaskControllerTestSuite {
 
         //When & Then
         mockMvc.perform(MockMvcRequestBuilders
-                .delete("/v1/tasks/" + taskId)
-                .contentType(MediaType.APPLICATION_JSON))
+                    .delete("/v1/tasks/" + taskId)
+                    .contentType(MediaType.APPLICATION_JSON))
                 .andExpect(MockMvcResultMatchers.status().isNoContent());
 
     }
