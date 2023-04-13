@@ -14,7 +14,6 @@ import java.util.Optional;
 @Service
 @RequiredArgsConstructor
 public class SimpleEmailService {
-
     private final JavaMailSender javaMailSender;
 
     public void send(final Mail mail) {
